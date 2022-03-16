@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: white;
   color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
@@ -17,6 +17,7 @@ button {
 }
 
 nav {
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +32,10 @@ nav ul {
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+main {
+  background-color: black;
 }
 
 .searchBar {
@@ -254,4 +259,29 @@ section > :nth-child(5) .card-pic {
 
 .shop img {
   max-width: 70vw;
+}
+
+.questions {
+  background-image: url(/pexels-andrea-piacquadio-846080.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  padding: 5vw;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 5vw;
+}
+
+.questions h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 45vh;
+}
+
+.questions button {
+  display: inline;
+  margin-left: 0 !important;
 }
