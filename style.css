@@ -12,6 +12,10 @@ body {
   font-size: 0.875rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -91,6 +95,8 @@ button {
 
 .curiosity {
   background-image: url(/heroMobile.jpg);
+  position: relative;
+  z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -119,11 +125,18 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  margin: 5vw;
+  padding: 5vw;
+  padding-top: 45vh;
+  margin-top: -35vh;
+  z-index: -1;
+  background-color: white;
 }
 
 section h3 {
   grid-column: 1/-1;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 section p {
@@ -151,12 +164,11 @@ section > :nth-child(5) {
 }
 
 .card-text {
-  padding: 1.5rem 0 0 1rem;
-  height: 20vh;
+  padding: 1.5rem 0 15vh 1rem;
+  height: fit-content;
 }
 .card-pic {
-  height: 20vh;
-  max-width: 500px;
+  min-height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
@@ -173,4 +185,73 @@ section > :nth-child(4) .card-pic {
 }
 section > :nth-child(5) .card-pic {
   background-image: url(/aarhus.webp);
+}
+
+.experiences {
+  background-color: white;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 5vw;
+}
+
+.experiences h3 {
+  grid-column: 1/-1;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-things {
+  border-radius: 1rem;
+  background-position: center;
+  min-height: 80vh;
+}
+.experiences > :nth-child(2) {
+  background-image: url(/pexels-paul-ijsendoorn-33041.jpg);
+  background-size: cover;
+}
+.experiences > :nth-child(3) {
+  background-image: url(/pexels-mikhail-nilov-9795357.jpg);
+}
+.experiences p {
+  font-size: 2.5rem;
+  color: white;
+  padding: 5rem 3rem 0 3rem;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  display: inline;
+  margin-left: 3rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.shop {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw;
+  padding-bottom: 0vw;
+}
+
+.shop h2 {
+  text-align: left;
+  font-weight: 400;
+}
+
+.button4 {
+  background-color: black;
+  color: white;
+  display: inline;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+}
+
+.shop img {
+  max-width: 70vw;
 }
